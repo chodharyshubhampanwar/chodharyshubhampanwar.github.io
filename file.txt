@@ -1,0 +1,5 @@
+ const formData = new FormData(formEl);
+    const formDataSerialized = Object.fromEntries(formData);
+    const jsonObject = {
+        ...formDataSerialized, api_key: "887acf1b-fe60-4440-adec-0cff51c7da70", status: "SUBSCRIBED"
+    }
