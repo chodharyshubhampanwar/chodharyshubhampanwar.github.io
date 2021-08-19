@@ -29,7 +29,7 @@ h1 {
 #wrapper {
   padding: 2.625rem 1.3125rem;
   max-width: 42rem;
-  margin: 1rem auto;
+  margin: 0 auto;
   box-sizing: border-box;
 }
 
@@ -75,8 +75,8 @@ body.dark {
   justify-content: space-between;
   padding: 5px;
   position: relative;
-  height: 22px;
-  width: 45px;
+  height: 18px;
+  width: 35px;
   transform: scale(1.5);
 }
 
@@ -85,21 +85,21 @@ body.dark {
   border-radius: 50%;
   position: absolute;
   top: 2px;
-  left: 3px;
-  height: 18px;
-  width: 18px;
+  left: 1.5px;
+  height: 14px;
+  width: 14px;
   transform: translateX(0px);
   transition: transform 0.2s linear;
 }
 
 .checkbox:checked + .label .ball {
-  transform: translateX(22px);
+  transform: translateX(18px);
 }
 
 .fa-moon {
-  width: 14px;
+  width: 10px;
 }
 
 .fa-sun {
-  width: 14px;
+  width: 10px;
 }
