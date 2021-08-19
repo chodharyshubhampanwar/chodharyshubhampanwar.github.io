@@ -21,20 +21,35 @@ a:visited,
 a:link,
 a:active {
   text-decoration: none;
-  color: rgb(240, 131, 149);
+  color: rgb(248, 91, 117);
 }
 h1 {
   font-size: 1.75rem;
 }
-nav,
-.articles-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+#wrapper {
+  padding: 2.625rem 1.3125rem;
   max-width: 42rem;
   margin: 1rem auto;
   box-sizing: border-box;
+}
+
+header,
+.articles-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 42rem;
+  margin: 1rem auto;
+  box-sizing: border-box;
+  color: rgb(240, 131, 149);
 }
 
 img {
