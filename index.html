@@ -11,32 +11,51 @@
         <header>
             <nav>
                 <div>
-                    <img src="./shubham-panwar.png" alt="main-logo">
+                    <img src="./shubham-panwar.png" alt="main-logo" style="margin-right: 0.875rem; margin-bottom: 0px; width: 4rem; height: 4rem; border-radius: 50%;">
                 </div>
-                    <div>
+                <div>
+                    <p>оставль старца и учаше кто млад</p>
                 </div>
-            </nav>
-        </header>
-        <main>
-            <form id="form" action="https://emailoctopus.com/api/1.5/lists/6264895a-8099-11eb-a3d0-06b4694bee2a/contacts">
-                <input type="email" name ="email" placeholder="your email address"required id="email">
-                <input type="submit" value="Submit">
-            </form>
-        </main>
-<p>hello</p>
-
-        <div>
+                     <div>
 	<input type="checkbox" class="checkbox" id="chk" />
 	<label class="label" for="chk">
-		<i class="fas fa-moon"></i>
-		<i class="fas fa-sun"></i>
+        	<img src="moon-solid.svg" class="fa-moon"></img>
+        <img src="sun-solid.svg" class="fa-sun"></img>
 		<div class="ball"></div>
 	</label>
 </div>
 
-<script src="./email.js">
+            </nav>
+        </header>
+        <main>
+            <!-- <form id="form">
+                <input type="email" name ="email" id="email" placeholder="your email address"required >
+                <input type="submit" value="Submit">
+            </form>-->
+            <article class="articles-wrapper" style="margin-top: 3rem; display: block;">
+                <a href=""><h1>Concave vs Convex Thinking</h1></a>
+                <div style="display: flex;">
+                    <p>August 28, 2020</p>
+                    <p>5 minutre read</p>
+                </article>
+
+            </div>
+
+        </main>
+
+<script>
+
+const chk = document.getElementById('chk');
+chk.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+});
 
 
 </script>
+<footer>
+    <div style="display: flex;" >  <p>contact</p>
+    <p>rss</p></div>
+
+</footer>
     </body>
 </html>

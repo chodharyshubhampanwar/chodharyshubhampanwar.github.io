@@ -1,0 +1,4 @@
+ curl -X POST \
+  -H "Content-Type: application/json" \
+  -d '{"api_key":"887acf1b-fe60-4440-adec-0cff51c7da70","email_address":"joe@bloggs.com","fields":{"FirstName":"Joe","LastName":"Bloggs"},"status":"SUBSCRIBED"}' \
+https://emailoctopus.com/api/1.5/lists/6264895a-8099-11eb-a3d0-06b4694bee2a/contacts

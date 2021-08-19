@@ -1,8 +1,5 @@
-
-const url = 'https://emailoctopus.com/api/1.5/lists/6264895a-8099-11eb-a3d0-06b4694bee2a/contacts';
-
-const formEl = document.getElementById("form");
-formEl.addEventListener('submit', handleFormSubmit)
+const form = document.getElementById("form");
+form.addEventListener('submit', handleFormSubmit)
 async function handleFormSubmit(e) {
     e.preventDefault();
     const form = e.currentTarget;
@@ -27,7 +24,6 @@ async function postFormDataAsJson({ url, formData }) {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            Accept: "application/json",
         },
         body: (formDataJsonString, { "api_key": "887acf1b-fe60-4440-adec-0cff51c7da70", "status": "SUBSCRIBED" })
     };

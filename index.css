@@ -5,17 +5,45 @@
 }
 
 body {
-  background-color: #fafafa;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  background-color: #292c35;
+  max-width: 100%;
+  min-height: 100vh;
   margin: 0;
+  padding: 0;
   transition: background 0.2s linear;
+  overflow-x: hidden;
+  color: white;
+  font-family: system, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+    "Lucida Grande";
+}
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  color: rgb(240, 131, 149);
+}
+h1 {
+  font-size: 1.75rem;
+}
+nav,
+.articles-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 42rem;
+  margin: 1rem auto;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
 }
 
 body.dark {
-  background: #292c35;
+  background-color: #fafafa;
+  color: black;
 }
 
 .checkbox {
@@ -24,7 +52,7 @@ body.dark {
 }
 
 .label {
-  background-color: #111;
+  background-color: black;
   border-radius: 50px;
   cursor: pointer;
   display: flex;
@@ -32,8 +60,8 @@ body.dark {
   justify-content: space-between;
   padding: 5px;
   position: relative;
-  height: 26px;
-  width: 50px;
+  height: 22px;
+  width: 45px;
   transform: scale(1.5);
 }
 
@@ -42,21 +70,21 @@ body.dark {
   border-radius: 50%;
   position: absolute;
   top: 2px;
-  left: 2px;
-  height: 22px;
-  width: 22px;
+  left: 3px;
+  height: 18px;
+  width: 18px;
   transform: translateX(0px);
   transition: transform 0.2s linear;
 }
 
 .checkbox:checked + .label .ball {
-  transform: translateX(24px);
+  transform: translateX(22px);
 }
 
 .fa-moon {
-  color: #f1c40f;
+  width: 14px;
 }
 
 .fa-sun {
-  color: #f39c12;
+  width: 14px;
 }
