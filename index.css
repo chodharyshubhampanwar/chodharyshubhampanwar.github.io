@@ -20,7 +20,7 @@ a:visited,
 a:link,
 a:active {
   text-decoration: none;
-  color: rgb(248, 91, 117);
+  color: #0000ff;
 }
 h1 {
   font-size: 1rem;
@@ -49,7 +49,7 @@ header,
   max-width: 42rem;
   margin: 2rem auto;
   box-sizing: border-box;
-  color: rgb(240, 131, 149);
+  color: #0000ff;
 }
 
 img {
